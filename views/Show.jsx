@@ -6,7 +6,13 @@ class Show extends React.Component {
         return (
             <>
                 <div>
-                    <h1> {req.params.id} </h1>
+                    <h1> Gotta Catch 'Em All </h1>
+                    <br/>
+                    <h2> {pokemon.name} </h2>
+                    <br/>
+                    <img src={pokemon.img + ".jpg"} alt={pokemon.name}></img>
+                    <br/>
+                    <a href={`/pokemon`}>Back</a>
                     
                 </div>
             </>
